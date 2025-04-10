@@ -64,6 +64,7 @@ public class HelloApplication extends Application {
         ToggleGroup group = new ToggleGroup();
         maleRadioButton.setToggleGroup(group);
         femaleRadioButton.setToggleGroup(group);
+        femaleRadioButton.setSelected(true);
         addPersonButton.setOnAction(this::onAddPersonButtonClick);
         ObservableList<Node> formHBoxChildren = formHBox.getChildren();
         formHBoxChildren.addAll(
